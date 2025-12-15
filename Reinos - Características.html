@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los 6 Reinos — 3 características cada uno</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#4fd1c5; --muted:#94a3b8; --glass: rgba(255,255,255,0.04);
+      --radius:12px; --gap:18px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:linear-gradient(180deg,#071025 0%, #07172b 100%); color:#e6eef6; -webkit-font-smoothing:antialiased; padding:36px}
+    .container{max-width:1000px;margin:0 auto}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:22px}
+    .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#052024;font-weight:700;font-size:20px}
+    h1{font-size:20px;margin:0}
+    p.lead{color:var(--muted);margin:4px 0 0;font-size:14px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:var(--gap)}
+    .card{background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.6)); padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .card h2{margin:0 0 8px;font-size:16px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--accent);font-weight:600;font-size:12px;margin-bottom:10px}
+    ul{margin:8px 0 0;padding-left:18px;color:#d9eef7}
+    li{margin-bottom:8px;line-height:1.35}
+
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:560px){body{padding:18px}.logo{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">6R</div>
+      <div>
+        <h1>Los 6 reinos — 3 características por reino</h1>
+        <p class="lead">Resumen breve y claro de rasgos distintivos de cada reino biológico.</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <article class="card">
+        <span class="tag">Animalia</span>
+        <h2>Reino Animal</h2>
+        <ul>
+          <li>Organismos eucariotas multicelulares sin pared celular.</li>
+          <li>Heterótrofos: obtienen energía consumiendo otros organismos.</li>
+          <li>Mayoría con capacidad de movimiento activo en alguna etapa de vida.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Plantae</span>
+        <h2>Reino Plantae</h2>
+        <ul>
+          <li>Organismos eucariotas multicelulares con pared celular de celulosa.</li>
+          <li>Autótrofos fotosintéticos que producen su propio alimento (clorofila).</li>
+          <li>Generalmente inmóviles y con ciclos de vida que incluyen alternancia de generaciones.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Fungi</span>
+        <h2>Reino Fungi</h2>
+        <ul>
+          <li>Eucariotas, mayormente multicelulares (excepto muchas levaduras uniceulares).</li>
+          <li>Heterótrofos por absorción: secretan enzimas y absorben nutrientes.</li>
+          <li>Pared celular compuesta por quitina; se reproducen por esporas.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Protista</span>
+        <h2>Reino Protista</h2>
+        <ul>
+          <li>Grupo diverso de eucariotas unicelulares o coloniales (parafilético).</li>
+          <li>Incluye organismos autótrofos y heterótrofos (algas, protozoos, mohos mucilaginosos).</li>
+          <li>Viven en ambientes acuáticos o húmedos y presentan gran variedad de métodos de locomoción.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Eubacteria</span>
+        <h2>Bacterias (Eubacteria)</h2>
+        <ul>
+          <li>Procariotas unicelulares sin núcleo definido ni orgánulos membranosos.</li>
+          <li>Pared celular con peptidoglucano (en la mayoría); gran diversidad metabólica.</li>
+          <li>Reproducción principalmente asexual por fisión binaria; presentes en casi todos los hábitats.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <span class="tag">Archaea</span>
+        <h2>Arqueas (Archaea)</h2>
+        <ul>
+          <li>Procariotas unicelulares similares a bacterias pero genéticamente distintos.</li>
+          <li>Membranas lipídicas y composición molecular únicas; muchas toleran ambientes extremos.</li>
+          <li>No tienen peptidoglucano en la pared; presentan vías metabólicas particulares (ej. metanogénesis).</li>
+        </ul>
+      </article>
+
+    </main>
+
+  </div>
+</body>
+</html>
